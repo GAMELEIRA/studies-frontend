@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio</title>
+  </head>
+  <body>
+    <!--ELEMENTO USADO PARA REPRODUZIR UM ARQUIVO DE AUDIO-->
+    <!--controls ADICIONA CONTROLES DE AUDIO-->
+    <!--autoplay ADICIONA REPRODUCAO AUTOMATICA ASSIM QUE ABRIR A PAGINA-->
+    <!--muted PARA QUE O AUDIO REPRODUZA SEM SOM -->
+    <!--SOMENTE SEU SOUND FILE É USADO PARA QUE SEJA REPRODUZIDO-->
+    <!--O ATRIBUTO LOOP PERMITE REPETIR O AUDIO EM LOOP-->
+    <!--O ATRIBUTO ONPLAY PERMITE EXECUTAR UM CODIGO QUANDO O AUDIO É INICIADO-->
+    <!--O ATRIBUTO ONEND PERMITE EXECUTAR UM CODIGO QUANDO O AUDIO É FINALIZADO-->
+    <!--O ATRIBUTO ONERROR PERMITE EXECUTAR UM CODIGO QUANDO O AUDIO NÃO FOR ABERTO-->
+    <audio controls autoplay muted>
+      <!--source PERMITE QUE VOCE ESPECIFIQUE ARQUIVOS DE AUDIO ALTERNATIVOS-->
+      <!--TIPOS DE MIDIA-->
+      <!--| FORMATO DO ARQUIVO | TIPO MIDIA-->
+      <!--| MP3                | audio/mpeg -->
+      <!--| WAV                | audio/wav -->
+      <!--| OGG                | audio/ogg -->
+      <source src="horse.ogg" type="audio/ogg" />
+      <source src="horse.mp3" type="audio/mpeg" />
+      <!--CASO SEU NAVEGADOR NAO SUPORTE NENHUM DOS ARQUIVOS SUPORTADOS-->
+      Seu browser não suporta o elemento de audio
+    </audio>
+  </body>
+</html>
