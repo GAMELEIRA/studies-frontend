@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plugins</title>
+  </head>
+  <body>
+    <!-- AS TAGS <object> E <embed> SAO UTILIZADAS PARA INCORPORAR CONTEÚDOS EXTERNOS, COMO VÍDEOS, ANIMAÇÕES, DOCUMENTOS ETC. -->
+    <!-- UTILIZAR ESSAS TAGS É ÚTIL PARA EXIBIR VÁRIOS TIPOS DE CONTEÚDO NA PÁGINA. -->
+
+    <!-- A TAG <object> É UTILIZADA PARA INCORPORAR CONTEÚDOS EXTERNOS GENÉRICOS. -->
+    <!-- data: DEFINE O CAMINHO PARA O RECURSO A SER EXIBIDO. -->
+    <!-- type: DEFINE O TIPO DE MÍDIA DO DOCUMENTO. -->
+    <!-- TIPOS DE MÍDIA | TABELE MIME -->
+    <!-- | FORMATO DO ARQUIVO | TIPO MÍDIA          -->
+    <!-- | PDF                | application/pdf     -->
+    <!-- | CSV                | text/csv           -->
+    <!-- | JSON               | application/json   -->
+    <!-- | XML                | application/xml    -->
+    <!-- | JPEG               | image/jpeg         -->
+    <!-- | PNG                | image/png          -->
+    <!-- | GIF                | image/gif          -->
+    <!-- | MP4                | video/mp4          -->
+    <!-- | MP3                | audio/mpeg         -->
+    <!-- | WAV                | audio/wav          -->
+    <!-- | OGG                | audio/ogg          -->
+    <!-- | ZIP                | application/zip    -->
+    <!-- | RTF                | application/rtf    -->
+    <!--MIME É UM CONJUNTO PADRONIZADO DE CONJUNTOS DE MIDIA PARA DESCREVER O FORMATO DE ARQUIVOS E TIPO DE CONTEUDO QUE PODE SER TRANSMITIDO-->
+    <object data="document.pdf" type="application/pdf" width="600" height="400">
+      <!-- SE O NAVEGADOR NÃO FOR COMPATÍVEL COM O PDF, EXIBIRÁ O TEXTO ABAIXO. -->
+      Seu navegador não suporta a visualização de PDFs. Acesse 
+      <a href="document.pdf">este link</a> para baixar o documento.
+    </object>
+
+    <!-- A TAG <embed> É UMA FORMA MAIS SIMPLES DE INCORPORAR CONTEÚDOS EXTERNOS. -->
+    <!-- NÃO PERMITE CONTEÚDO ALTERNATIVO. -->
+    <!-- src: DEFINE O CAMINHO PARA O RECURSO A SER EXIBIDO. -->
+    <!-- type: DEFINE O TIPO DE MÍDIA DO DOCUMENTO. -->
+    <embed src="video.mp4" type="video/mp4" width="600" height="400">
+  </body>
+</html>
