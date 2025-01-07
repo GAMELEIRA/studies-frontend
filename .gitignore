@@ -1,6 +1,5 @@
 .vscode/*
 .DS_Store
-html/w3schools/.DS_Store
-html/w3schools/.DS_Store
+**/.DS_Store
 
 **/node_modules/
