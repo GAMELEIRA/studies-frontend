@@ -1,0 +1,21 @@
+{
+  "name": "01-class",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido na aula 01",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --injectGlobals false --runInBand test/",
+    "test:dev": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --injectGlobals false --watchAll --runInBand test/",
+    "test:debug": "node --experimental-vm-modules --inspect-brk ./node_modules/jest/bin/jest.js --injectGlobals false --watchAll --runInBand test/"
+  },
+  "author": "GAMALEIRA",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": "v18.17.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0"
+  }
+}
