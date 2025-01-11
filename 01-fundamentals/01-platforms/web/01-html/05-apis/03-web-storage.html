@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Storage</title>
+  </head>
+  <body>
+    <!--COM O ARMAZENAMENTO WEB OS APLICATIVOS WEB PODEM ARMAZENAR DADOS LOCALMENTE NO NAVEGADOR DO USUARIO-->
+    <!--É POSSIVEL UTILIZAR DOIS OBJETOS PARA ARMAZENAR DADOS NO CLIENTE:-->
+    <!--LOCAL STORAGE: ARMAZENADO EM MEMÓRIA DO NAVEGADOR, SEM DATA DE EXPIRACAO-->
+    <!--SESSION STORAGE: ARMAZENADO EM MEMÓRIA DO NAVEGADOR APÓS FECHAR A APLICAÇÃO. OS DADOS SAO PERDIDOS QUANDO A ABA DO NAVEGADOR É FECHADA-->
+    <script>
+      if (typeof Storage != "undefined") {
+        // ARMAZENAMENTO EM LOCAL STORAGE
+        //localStorage ARMAZENA SEM DATA DE EXPIRACAO
+        //PARA ARMAZENAR DEVE SER CRIADO UM PAR CHAVE/VALOR
+        localStorage.setItem("nome", "Gabriel Gameleira");
+        localStorage.setItem("idade", 25);
+        localStorage.setItem("endereco", "Rua ABC, 123");
+        console.log("Dados armazenados com sucesso!");
+
+        //PARA REMOVER O ITEM EM LOCAL STORAGE
+        //localStorage.removeItem("nome");
+
+        // ARMAZENAMENTO EM LOCAL STORAGE
+        //sessionStorage ARMAZENA COM DATA DE EXPIRACAO ATE ENCERRAR A ABA
+        sessionStorage.setItem("Clube", "Corinthians");
+        sessionStorage.setItem("Jogadores", 20);
+
+        // REMOVENDO O ITEM EM SESSION STORAGE
+        //sessionStorage.removeItem("Clube");
+
+      } else {
+        console.log("Banco de dados não suportado pelo navegador!");
+      }
+    </script>
+  </body>
+</html>
