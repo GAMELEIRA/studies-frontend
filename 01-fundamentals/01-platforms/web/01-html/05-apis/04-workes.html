@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Worker</title>
+  </head>
+  <body>
+    <p>Contador: <output id="result"></output></p>
+    <!--UM WEB WORKER É UM JAVASCRIPT EXECUTADO EM SEGUNDO PLANO SEM AFETAR O DESEMPENHO DA PAGINA-->
+    <button onclick="startWorker()">Start Worker</button>
+    <button onclick="stopWorker()">Stop Worker</button>
+    <script>
+      // A VARIÁVEL 'w' SERÁ USADA PARA ARMAZENAR A INSTÂNCIA DO WORKER
+      let w;
+      
+      function startWorker() {
+        // A CONDIÇÃO VERIFICA SE O SUPORTE A WORKERS ESTÁ DISPONÍVEL NO NAVEGADOR
+        if (typeof Worker !== "undefined") {
+          if (typeof w == "undefined") {
+            // CRIA UMA NOVA INSTÂNCIA DO WORKER, CARREGANDO O SCRIPT '04-workes.js' QUE VAI RODAR EM SEGUNDO PLANO
+            w = new Worker("./src/scripts/04-workes.js");
+          }
+
+          w.onmessage = function (event) {
+            // QUANDO O WORKER ENVIA UMA MENSAGEM DE VOLTA PARA A PÁGINA, O RESULTADO É EXIBIDO NO ELEMENTO <output>
+            document.getElementById("result").innerHTML = event.data;
+          };
+        } else {
+          // CASO O NAVEGADOR NÃO SUPORTE WORKERS, UMA MENSAGEM DE ERRO É EXIBIDA
+          document.getElementById("result").innerHTML = "Sorry! Script não suportado.";
+        }
+      }
+
+      function stopWorker() {
+        // TERMINA O WORKER, PARANDO SUA EXECUÇÃO
+        w.terminate();
+
+        // LIMPA A INSTÂNCIA DO WORKER PARA QUE NÃO SEJA POSSÍVEL INTERAGIR COM ELE DE NOVO
+        w = undefined;
+      }
+    </script>
+  </body>
+</html>
