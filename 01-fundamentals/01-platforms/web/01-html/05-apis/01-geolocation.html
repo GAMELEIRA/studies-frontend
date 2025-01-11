@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geolocalização</title>
+  </head>
+  <body>
+    <!--GEOLOCALIZACAO É USADA PARA LOCALIZAR A POSICAO DE UM USUARIO GEOGRAFICAMENTE-->
+    <button onclick="getLocation()">Obter Localização</button>
+    <p id="location"></p>
+
+    <script>
+      const x = document.getElementById("location");
+      function showPosition(position) {
+        //position É UM OBJETO DISPONIVEL PARA LOCALIZAR A POSICAO DE UM USUARIO
+        //coords É UM OBJETO QUE CONTEM AS COORDENADAS DA LOCALIZACAO
+        //coords.latitude VALOR DECIMAL DA LAGITUDE
+        //coords.longitude VALOR DECIMAL DA LONGITUDE
+        //coords.accuracy VALOR EM METROS DA PRECISAO DA LOCALIZACAO
+        //coords.timestamp VALOR EM MILISSEGUNDOS DA LOCALIZACAO
+        //coords.speed VALOR EM METROS POR SEGUNDO DA VELOCIDADE DO USUARIO ATRAVES DA LOCALIZACAO
+        //coords.heading VALOR EM GRADOS DA DIRECAO EM QUE O USUARIO ESTA VEICULADO ATRAVES DA LOCALIZACAO
+        //coords.altitude VALOR EM METROS DA ALTITUDE DO USUARIO ATRAVES DA LOCALIZACAO
+        //coords.altitudeAccuracy VALOR EM METROS DA PRECISAO DA ALTITUDE DO USUARIO ATRAVES DA LOCALIZACAO
+
+        x.innerHTML =
+          "Latitude: " +
+          position.coords.latitude +
+          "<br>Longitude: " +
+          position.coords.longitude;
+      }
+      //FUNCAO QUE PEGA A LOCALIZACAO DO USUARIO
+      function getLocation() {
+        if (navigator.geolocation) {
+          //getCurrentPosition É UMA FUNCAO QUE PEGA A LOCALIZACAO DO USUARIO
+          navigator.geolocation.getCurrentPosition(showPosition);
+        
+          //watchPosition É UMA FUNCAO QUE PERMANECE EM CONTROLE DA LOCALIZACAO DO USUARIO MESMO COM ELE SE MOVENDO
+          navigator.geolocation.watchPosition(showPosition);
+          //clearWatch É UMA FUNCAO QUE PARA O CONTROLE DA LOCALIZACAO DO USUARIO
+          navigator.geolocation.clearWatch(watchId);
+        } else {
+          document.getElementById("location").innerHTML =
+            "Geolocalização não é suportada pelo navegador.";
+        }
+      }
+    </script>
+  </body>
+</html>
