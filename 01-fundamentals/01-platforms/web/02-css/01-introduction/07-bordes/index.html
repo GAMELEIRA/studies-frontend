@@ -28,7 +28,7 @@
     <!--VALORES PERMITIDOS-->
     <!--UM NUMERO INTEIRO OU UMA UNIDADE (PX, EM, REM, ETC.)-->
     <!--É POSSÍVEL DEFINIR COMBINAR JEITOS DIFERENTES DE DEFINIR AS BORDAS PARA CADA LADO. EXEMPLO: A, B, C, D = 1PX, 1PX, 1PX, 1PX  OU AC BD = 1PX 1PX OU ABCD = 1PX-->
-    <div style="border-width: 5px solid red;">
+    <div style="border-width: 5px; border-style: solid; border-color: red;">
       Borda com largura de 5px, cor vermelha e estilo em pontilhados
     </div>
 
@@ -38,8 +38,29 @@
     <!--UMA PALAVRA CHAVE (EXEMPLO: RED PARA VERMELHO)-->
     <!--UMA COLECAO DE CORES EM HEXADECIMAL (EXEMPLO: #FF0000 #00FF00 #0000FF PARA VERMELHO, VERDE, AZUL)-->
     <!--É POSSÍVEL DEFINIR COMBINACOES DIFERENTES DE DEFINIR AS BORDAS PARA CADA LADO. EXEMPLO: A, B, C, D = #FF0000, #00FF00, #0000FF, #FFFFFF OU AC BD = #FF0000 #00FF00 OU ABCD = #FF0000-->
-    <div style="border-color: #FF0000 solid #00FF00 dashed #0000FF; padding: 20px;">
-      Borda com cores em hexadecimal, estilos diferentes e largura 2px
+    <div style="border-width: 5px; border-style: solid; border-color: red;">
+      Borda com largura de 5px, cor vermelha e estilo em pontilhados
     </div>
+
+    <!--É POSSIVEL DEFINIR UM ESTILO ESPECIFICO PARA CADA BORDA DO BOX MODEL-->
+    <!--border-top-style, border-right-style, border-bottom-style, border-left-style-->
+    <!--ESSE CONCEITO PODE SER APLICADO PARA border-width e border-color-->
+    <div style="border-top: 1px solid blue; border-right: 2px dashed red; border-bottom: 3px dotted green; border-left: 4px solid yellow; padding: 20px;">
+      Bordas com estilos diferentes para cada lado
+    </div>
+
+    <!--É POSSIVEL DEFINIR MULTIPLOS ESTILOS DE BORDAS EM UMA UNICA PROPRIEDADE PARA CADA LADO DO BOX MODEL-->
+    <!--QUATRO LADOS DIFERENTES-->
+    <p style="border-style: dotted solid double dashed">Quatro lados diferentes</p>
+
+    <!--TRES LADOS BORDAS LATERAIS IGUAIS TOP E FUNDO DIFERENTES-->
+    <p style="border-style: dotted solid double;">Três lados diferentes</p>
+
+    <!--DOIS LADOS PARALALELOS IGUAIS-->
+    <p style="border-style: dotted solid;">Dois lados diferentes</p>
+
+    <!--TODOS OS LADOS IGUAIS-->
+    <p style="border-style: solid;">Um lado único</p>
+
   </body>
 </html>
