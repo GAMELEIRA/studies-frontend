@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margens</title>
+  <style>
+    p {
+      border: 1px solid black;      
+    }
+  </style>
+</head>
+<body>
+  <!--MARGENS SAO USADAS PARA CRIAR ESPAÇOS ENTRE OS ELEMENTOS-->
+  <!--É POSSIVEL DEFINIR PARA CADA LADO DE UM ELEMENTO, margin-top, margin-bottom, margin-left, margin-right-->
+  <!--AS PROPRIEDADES PODEM TER OS SEGUINTES VALORES, auto, px, pt, cm, %, inherit(HERDA DO PAI)-->
+  <p style="margin-top: 10px; margin-bottom: 8px; margin-left: 7px; margin-right: 3px;">Teste</p>
+
+  <!--PARA DEFINIR A MARGEM DE FORMA ABREVIADA USE A PROPRIEDADE MARGIN-->
+  <!--É POSSIVEL DEFINIR AS MARGENS INDIVIDUAIS PARA CADA LADO-->
+  <!--AS MARGENS ABREVIADAS PODEM SER USADAS EM QUADRUPLOS, TUPLA, OU EM TRÍPLOS VALORES-->
+  <!--EXEMPLOS: margin: 10px, margin: 10px 20px, margin: 10px 20px 30px-->
+  <!--OBS: A ORDEM DE DEFINIÇÃO DAS MARGENS É MARGIN-TOP, MARGIN-RIGHT, MARGIN-BOTTOM, MARGIN-LEFT-->
+
+  <!--TODOS OS LADOS DIFERENTES-->
+  <p style="margin: 10px 7px 8px 3px;">Teste</p>
+
+  <!--TOP E FUNDO DIFERENTES E LATERAIS IGUAIS-->
+  <p style="margin: 10px 8px 20px;">Teste</p>
+
+  <!--TOP E FUNDO IGUAIS E LATERAIS IGUAIS-->
+  <p style="margin: 10px 8px;">Teste</p>
+
+  <!--TODOS OS LADOS IGUAIS-->
+  <p style="margin: 10px;">Teste</p>
+
+  <!--É POSSIVEL CENTRALIZAR HORIZONTALMENTE O ELEMENTO UTILIZANDO A PROPRIEDADE AUTO-->
+  <p style="margin: auto; width: 300px;">Gabriel</p>
+</body>
+</html>
