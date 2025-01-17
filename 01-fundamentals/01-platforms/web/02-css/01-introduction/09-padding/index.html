@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width='device-width', initial-scale=1.0">
+  <title>Padding</title>
+  <style>
+    div {
+      margin: 8px;
+    }
+  </style>
+</head>
+<body>
+  <!--PADDING É UTILIZADO PARA CRIAR UM ESPAÇAMENTO INTERNO ENTRE O CONTEUDO E A MARGEM DO ELEMENTO-->
+  <!--É POSSIVEL DEFINIR O ESPAÇAMENTO COM AS SEGUINTES PROPRIEDADES:-->
+  <!--padding-top, padding-bottom, padding-left, padding-right-->
+  <!--AS PROPRIEDADES PODEM TER OS SEGUINTES VALORES, auto, px, pt, cm, %, inherit(HERDA DO PAI)-->
+  
+
+  <!--PARA DEFINIR PADDING EM TODOS OS LADOS-->
+  <div style="background-color: #f2f2f2; padding: 10px;">
+    Teste
+  </div>
+  
+  <!--É POSSIVEL DEFINIR PADDING DIFERENTES PARA TODOS OS LADOS-->
+  <div style="background-color: #f2f2f2; padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px;">
+    Teste
+  </div>
+
+  <!--É POSSIVEL DEFINIR PADDINGS ESPECIFICOS-->
+  <div style="background-color: #f2f2f2; padding-left: 20px;">
+    Teste
+  </div>
+
+  <div style="background-color: #f2f2f2; padding-right: 20px;">
+    Teste
+  </div>
+
+  <div style="background-color: #f2f2f2; padding-top: 10px; padding-bottom: 10px;">
+    Teste
+  </div>
+
+  <!--SE FOR DEFINIDO 3 VALORES OS VALORES LATERAIS SERAO IGUAIS-->
+  <div style="background-color: #f2f2f2; padding: 10px 20px 8PX;">
+    Teste
+  </div>
+
+  <!--SE FOR DEFINIDO 2 VALORES, TOP E BOTTOM SERAO IGUAIS LATERIAS SAO IGUAIS-->
+  <div style="background-color: #f2f2f2; padding: 10px 20px;">
+    Teste
+  </div>
+
+  <!--PARA MANTER O TAMANHO DO ELEMENTO IDENPENDENTE DO TAMANHO DO CONTEUDO MAIS PADDING USAR O BOX-SIZING-->
+  <div style="width: 300px; background-color: #f2f2f2; box-sizing: border-box; padding: 10px;">
+    Teste
+  </div>
+
+</body>
+</html>
