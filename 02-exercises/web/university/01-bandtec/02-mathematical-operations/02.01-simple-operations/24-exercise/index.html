@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <script src="./src/scripts/index.js"></script>
+    <title>Guerreiros Sayajins</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Guerreiros Sayajins</legend>
+          <div class="field">
+            <label for="strength">Força:</label>
+            <input id="strength" type="number" />
+          </div>
+          <p>Transformar em...</p>
+          <div id="message">
+            <img
+              id="message-img"
+              width="auto"
+              height="100px"
+              src="./src/assets/images/ssj.png"
+              alt="Goku"
+            />
+            <p id="message-txt"></p>
+          </div>
+          <button type="button" onclick="requestTranformSsj(1)">SSJ</button>
+          <button type="button" onclick="requestTranformSsj(2)">SSJ2</button>
+          <button type="button" onclick="requestTranformSsj(3)">SSJ3</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

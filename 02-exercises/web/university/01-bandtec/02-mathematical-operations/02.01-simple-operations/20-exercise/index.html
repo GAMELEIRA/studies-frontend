@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./scripts/index.js"></script>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Paquerometro</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Paquerometro</legend>
+          <div class="field">
+            <label for="wage-brother">Salário do Brother:</label>
+            <input id="wage-brother" type="number" />
+          </div>
+          <div class="field">
+            <label for="quantity-stayers-brother"
+              >Quantidade de Ficantes do brother:</label
+            >
+            <input id="quantity-stayers-brother" type="number" />
+          </div>
+          <div class="field">
+            <label for="outside-brother">Quantidade de Foras do brother:</label>
+            <input id="outside-brother" type="number" />
+          </div>
+        </fieldset>
+        <button type="button" onclick="requestCalculateEnvy()">
+          Calcular Salário
+        </button>
+      </form>
+    </main>
+  </body>
+</html>

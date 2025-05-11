@@ -1,0 +1,16 @@
+.field label {
+    display: block;
+}
+
+#phrase {
+    color: #0000FF;
+}
+
+#frequency {
+    color: #00FF00;
+    font-weight: bold;
+}
+
+#status-bar {
+    background-color: #ff0000;
+}

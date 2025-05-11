@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <script src="./src/scripts/index.js"></script>
+    <title>Estações do Ano</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Estações do Ano</legend>
+          <select id="season-selected" onchange="showPicture()">
+            <option></option>
+            <option value="summer">Verão</option>
+            <option value="fall">Outono</option>
+            <option value="winter">Inverno</option>
+            <option value="spring">Primavera</option>
+          </select>
+        </fieldset>
+      </form>
+      <img id="season" />
+    </main>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./scripts/index.js"></script>
+    <title>Loteria</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Loteria</legend>
+          <div class="field">
+            <label for="gross-salary">Salário Bruto</label>
+            <input id="gross-salary" type="number" />
+          </div>
+          <button type="button" onclick="confirmSalary()">
+            Confirmar Salário
+          </button>
+          <button type="button" onclick="payBill(1)">Pagar Conta de 100</button>
+          <button type="button" onclick="payBill(2)">Pagar Conta de 500</button>
+          <button type="button" onclick="winMoney()">
+            Ganhar 2000 na loteria
+          </button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
