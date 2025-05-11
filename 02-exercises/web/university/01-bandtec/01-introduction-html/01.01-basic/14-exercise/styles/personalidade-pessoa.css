@@ -1,0 +1,10 @@
+#people {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 5px 0px 0px 0px;
+}
+
+.without-people {
+    visibility: hidden;
+}
