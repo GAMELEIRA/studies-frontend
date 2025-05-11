@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/moradia.css"> 
+    <script src="scripts/moradia.js"></script>
+    <title>Moradia</title>
+</head>
+<body>
+    <form>
+        <div class="field">
+            <label for="street">Rua/Avenida/Vila:</label>
+            <input id="street" type="text"> 
+        </div>
+        <div class="field">
+            <label for="number-home">Número Casa:</label>
+            <input id="number-home" type="number">
+        </div>
+        <button type="button" onclick="showMessages()">Onde Eu Moro</button>
+    </form>
+    <div id="phrases">
+    </div>
+</body>
+</html>

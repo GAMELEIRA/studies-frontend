@@ -1,0 +1,17 @@
+.clubs {
+    width: 100px;
+    height: 100px;
+}
+
+.trophy {
+    width: 100px;
+    height: 100px;
+}
+
+.element-visibilty-visible {
+    visibility: visible;
+}
+
+.element-visibilty-hidden {
+    visibility: hidden;
+}

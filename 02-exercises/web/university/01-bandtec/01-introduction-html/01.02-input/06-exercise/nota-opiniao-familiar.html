@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <script src="scripts/nota-opiniao-familiar.js"></script>
+        <link rel="stylesheet" href="styles/nota-opiniao-familiar.css">
+        <title>Nota Opinião Familiar</title>
+    </head>
+    <body>
+        <form>
+            <div class="field">
+                <label for="grade">Nota:</label>
+                <input id="grade" type="number"> 
+            </div>
+            <button type="button" id='grandmasOpinion' onclick="showResponse(1)">Opinião da Vó</button>
+            <button type="button" id='mothersOpinion' onclick="showResponse(2)">Opinião da Mãe</button>
+        </form>
+        <div id="response"></div>
+    </body>
+</html>
