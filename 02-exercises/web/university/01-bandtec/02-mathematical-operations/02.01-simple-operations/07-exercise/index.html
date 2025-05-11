@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./scripts/index.js"></script>
+    <title>Avaliação Continuada</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Boletim:</legend>
+          <div class="field">
+            <label for="name">Nome:</label>
+            <input id="name" type="text" />
+          </div>
+          <div class="field">
+            <label for="score-continue">Continuada:</label>
+            <input id="score-continue" type="number" />
+          </div>
+          <div class="field">
+            <label for="score-semi-annual">Semestral:</label>
+            <input id="score-semi-annual" type="number" />
+          </div>
+          <button
+            type="button"
+            onclick="requestCalculteAverage()"
+            type="submit"
+          >
+            Calcular Média
+          </button>
+        </fieldset>
+      </form>
+      <div id="response"></div>
+    </main>
+  </body>
+</html>

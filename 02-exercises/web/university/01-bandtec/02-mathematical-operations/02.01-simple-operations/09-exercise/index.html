@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <script src="./src/scripts/index.js"></script>
+    <title>Calculador de Gasto Hidrico</title>
+</head>
+<body>
+    <form>
+        <div class="field">
+            <label for="quantity-drips-tap-one">Quantidade de Pingos na Torneira 1:</label>
+            <input id="quantity-drips-tap-one" type="number">
+        </div>
+        <div class="field">
+            <label for="quantity-drips-tap-two">Quantidade de Pingos na Torneira 2:</label>
+            <input id="quantity-drips-tap-two" type="number">
+        </div>
+        <div class="field">
+            <label for="quantity-drips-tap-three">Quantidade de Pingos na Torneira 3:</label>
+            <input id="quantity-drips-tap-three" type="number">
+        </div>
+        <button onclick="calculateWaterCosts()" type="button">Calcular os Gastos</button>
+    </form>
+</body>
+</html>

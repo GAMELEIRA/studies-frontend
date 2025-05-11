@@ -1,0 +1,15 @@
+.field label {
+    display: block;
+}
+
+#message {
+    color: blue;
+}
+
+#grossWage {
+    color: #00FF00;
+}
+
+#netWage {
+    color: green;
+}

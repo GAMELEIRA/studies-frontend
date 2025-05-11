@@ -1,0 +1,15 @@
+.field label {
+    display: flex;
+}
+
+#message {
+    display: flex;
+    width: auto;
+    background-color: red;
+    color: white;
+}
+
+#photo {
+    width: 10%;
+    height: auto;
+}

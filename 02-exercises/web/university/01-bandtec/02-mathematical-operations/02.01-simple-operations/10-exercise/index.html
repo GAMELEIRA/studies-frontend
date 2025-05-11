@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <script src="./src/scripts/index.js"></script>
+    <title>Arrecadação Clube de Futebol</title>
+</head>
+<body>
+    <form>
+        <div class="field">
+           <label for="tickets-students-sold">Ingressos de Estudantes Vendidos:</label>
+           <input id="tickets-students-sold" type="number">  
+        </div>
+        <div class="field">
+            <label for="tickets-common-sold">Ingressos Comuns Vendidos:</label>
+            <input id="tickets-common-sold" type="number">  
+         </div>
+         <div class="field">
+            <label for="value-tickets-common">Valor do Ingresso Comum:</label>
+            <input id="value-tickets-common" type="number">
+         </div>
+         <button type="button" onclick="calculateRevenue()">Calcular Arrecadação</button>
+    </form>
+</body>
+</html>

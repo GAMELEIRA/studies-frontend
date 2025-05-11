@@ -1,0 +1,15 @@
+.field label {
+  display: block;
+}
+
+#label-0 {
+  color: #00ff00;
+}
+
+#label-1 {
+  color: #0000ff;
+}
+
+#label-2 {
+  color: #ff0000;
+}
