@@ -1,0 +1,49 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24;
+}
+
+h1, h2 {
+  color: #000;
+  font-weight: bold;
+  margin: 16px;
+}
+
+img {
+  height: 100px;
+  width: auto;
+}
+
+li {
+  list-style: none;
+  margin: 8px;
+  padding: 8px;
+  background-color: #ffe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
