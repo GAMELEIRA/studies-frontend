@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+  .w3-col.m2 {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atrativos Turísticos - OSASCO</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="./scripts/index.js" defer></script>
+  </head>
+  <body>
+    <main class="w3-container w3-padding-32">
+      <h1 class="w3-center">Atrativos Turísticos de Osasco</h1>
+
+      <div class="w3-row-padding">
+        <div class="w3-col m2">
+          <div class="w3-card-4">
+            <img
+              src="./assets/images/calcadao-osasco.png"
+              alt="Calçadão de Osasco"
+              class="w3-image"
+            />
+            <div class="w3-container">
+              <h5>Calçadão de Osasco</h5>
+              <p>
+                Localizado no coração da cidade, o Calçadão de Osasco é um
+                importante polo comercial<span id="dots-1">...</span
+                ><span id="more-1" style="display: none">
+                  e de convivência urbana. Com grande fluxo de pedestres, abriga
+                  uma variedade de lojas populares, bancos, serviços e opções
+                  gastronômicas. É também um espaço cultural espontâneo, onde
+                  artistas de rua se apresentam e a população se reúne em
+                  momentos de lazer ou protesto. Representa a energia do centro
+                  de Osasco em sua forma mais vibrante.</span
+                >
+              </p>
+              <button
+                onclick="toggleDescription(1)"
+                id="btn-1"
+                class="w3-button w3-small w3-border"
+              >
+                Ler mais
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-col m2">
+          <div class="w3-card-4">
+            <img
+              src="./assets/images/gremio-osasco.png"
+              alt="Grêmio Osasco"
+              class="w3-image"
+            />
+            <div class="w3-container">
+              <h5>Grêmio Osasco</h5>
+              <p>
+                O Grêmio Esportivo Osasco é um dos clubes mais tradicionais da
+                cidade e um símbolo do esporte local.<span id="dots-2">...</span
+                ><span id="more-2" style="display: none">
+                  Fundado para valorizar o futebol na região, ele representa o
+                  orgulho esportivo osasquense e oferece oportunidade para
+                  jovens talentos. Seus jogos são realizados no Estádio Prefeito
+                  José Liberatti, que se tornou um ponto de encontro para
+                  torcedores apaixonados e famílias. Além do futebol, o clube
+                  promove atividades comunitárias e incentiva a inclusão social
+                  através do esporte.</span
+                >
+              </p>
+              <button
+                onclick="toggleDescription(2)"
+                id="btn-2"
+                class="w3-button w3-small w3-border"
+              >
+                Ler mais
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-col m2">
+          <div class="w3-card-4">
+            <img
+              src="./assets/images/osasco-plaza.png"
+              alt="Osasco Plaza Shopping"
+              class="w3-image"
+            />
+            <div class="w3-container">
+              <h5>Osasco Plaza Shopping</h5>
+              <p>
+                O Osasco Plaza Shopping é um dos centros comerciais mais
+                conhecidos da cidade.<span id="dots-3">...</span
+                ><span id="more-3" style="display: none">
+                  Localizado em uma área estratégica, é frequentado por milhares
+                  de pessoas diariamente. O shopping oferece uma ampla gama de
+                  lojas, cinema, praça de alimentação e eventos culturais
+                  sazonais. É também parte da memória coletiva da cidade por sua
+                  história e papel na modernização do comércio local. Uma opção
+                  ideal para compras, lazer e entretenimento no cotidiano
+                  urbano.</span
+                >
+              </p>
+              <button
+                onclick="toggleDescription(3)"
+                id="btn-3"
+                class="w3-button w3-small w3-border"
+              >
+                Ler mais
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-col m2">
+          <div class="w3-card-4">
+            <img
+              src="./assets/images/ponte-osasco-natal.png"
+              alt="Ponte Metálica de Osasco"
+              class="w3-image"
+            />
+            <div class="w3-container">
+              <h5>Ponte Metálica</h5>
+              <p>
+                Construída em 1892, a Ponte Metálica de Osasco é um marco
+                histórico da cidade.<span id="dots-4">...</span
+                ><span id="more-4" style="display: none">
+                  Originalmente utilizada para o transporte ferroviário, hoje
+                  ela se destaca como símbolo do passado industrial da região.
+                  Durante o Natal e outras datas comemorativas, a ponte ganha
+                  iluminação temática, tornando-se atração turística e ponto
+                  fotográfico. Sua estrutura metálica e imponência arquitetônica
+                  são testemunhos da evolução urbana e do patrimônio ferroviário
+                  paulista.</span
+                >
+              </p>
+              <button
+                onclick="toggleDescription(4)"
+                id="btn-4"
+                class="w3-button w3-small w3-border"
+              >
+                Ler mais
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-col m2">
+          <div class="w3-card-4">
+            <img
+              src="./assets/images/shopping-uniao.png"
+              alt="Shopping União"
+              class="w3-image"
+            />
+            <div class="w3-container">
+              <h5>Shopping União</h5>
+              <p>
+                Com mais de 200 lojas, o Shopping União de Osasco é um dos
+                maiores da região metropolitana.<span id="dots-5">...</span
+                ><span id="more-5" style="display: none">
+                  É conhecido por sua infraestrutura moderna, diversidade de
+                  serviços, lazer para todas as idades e um ambiente acolhedor.
+                  O shopping promove eventos temáticos, ações sociais e
+                  experiências interativas que atraem visitantes de toda a
+                  Grande São Paulo. Com localização privilegiada, é uma parada
+                  obrigatória para quem deseja conforto e variedade em um só
+                  lugar.</span
+                >
+              </p>
+              <button
+                onclick="toggleDescription(5)"
+                id="btn-5"
+                class="w3-button w3-small w3-border"
+              >
+                Ler mais
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-col m2">
+          <div class="w3-card-4">
+            <img
+              src="./assets/images/super-shopping.png"
+              alt="SuperShopping Osasco"
+              class="w3-image"
+            />
+            <div class="w3-container">
+              <h5>SuperShopping Osasco</h5>
+              <p>
+                Inaugurado em 2007, o SuperShopping Osasco é conhecido pelo
+                ambiente moderno.<span id="dots-6">...</span
+                ><span id="more-6" style="display: none">
+                  Com um mix de lojas bem selecionado, cinema, restaurantes e
+                  atrações para crianças, é um dos destinos favoritos das
+                  famílias osasquenses. O shopping promove campanhas de
+                  engajamento social, exposições culturais e apresentações
+                  musicais, reforçando seu papel como espaço de convivência
+                  comunitária.</span
+                >
+              </p>
+              <button
+                onclick="toggleDescription(6)"
+                id="btn-6"
+                class="w3-button w3-small w3-border"
+              >
+                Ler mais
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
