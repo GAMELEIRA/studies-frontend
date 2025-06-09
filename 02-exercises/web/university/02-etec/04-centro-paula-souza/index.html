@@ -1,336 +1,349 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <title>GEEAD – Técnico em Desenvolvimento de Sistemas</title>
-      <style>
-         #main {
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="./styles/index.css">
+   <script type="module" src="./scripts/index.js"></script>
+   <title>GEEAD – Técnico em Desenvolvimento de Sistemas</title>
+   <style>
+      #main {
          margin-left: 120px
-         }
-         .w3-row-padding img {
+      }
+
+      .w3-row-padding img {
          margin-bottom: 12px
-         }
-         /* Definimos que a sidebar terá uma largura de 120px e cor a cord de fundo #222 */
-         .w3-sidebar {
+      }
+
+      /* Definimos que a sidebar terá uma largura de 120px e cor a cord de fundo #222 */
+      .w3-sidebar {
          width: 120px;
          background: #222;
-         }
-         /*Define Fonte para todas as tags listadas abaixo*/
-         body,
-         h1,
-         h2,
-         h3,
-         h4,
-         h5,
-         h6 {
+      }
+
+      /*Define Fonte para todas as tags listadas abaixo*/
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
          font-family: "Montserrat", sans-serif
-         }
-         @media only screen and (max-width: 600px) {
+      }
+
+      @media only screen and (max-width: 600px) {
          #main {
-         margin-left: 0
+            margin-left: 0
          }
-         }
-      </style>
-   </head>
-   <body class="w3-black">
-      <!--SideBar-->
-      <nav class="w3-sidebar w3-bar-block w3-center w3-hide-small">
-         <!-- HOME -->
-         <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
-            <i class="fa fa-home w3-xxlarge"></i>
-            <p>HOME</p>
-         </a>
-         <!-- Sobre -->
-         <a href="#sobre" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
-            <i class="fa fa-user w3-xxlarge"></i>
-            <p>SOBRE</p>
-         </a>
-         <!-- Grade Curricular -->
-         <a href="#gradeC" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
-            <i class="fa fa-columns w3-xxlarge"></i>
-            <p>Grade Curricular</p>
-         </a>
-         <!-- Docentes -->
-         <a href="#docentes" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
-            <i class="fa fa fa-address-card w3-xxlarge"></i>
-            <p>DOCENTES</p>
-         </a>
-         <!-- Mercado de Trabalho -->
-         <a href="#mercado" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
-            <i class="fa fa-handshake-o w3-xxlarge"></i>
-            <p>Mercado de Trabalho</p>
-         </a>
-         <!-- Tecnologias -->
-         <a href="#tecnologias" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
-            <i class="fa fa-connectdevelop w3-xxlarge "></i>
-            <p>Tecnologias</p>
-         </a>
-         <!-- Contato -->
-         <a href="#contato" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
-            <i class="fa fa-envelope w3-xxlarge"></i>
-            <p>CONTATO</p>
-         </a>
+      }
+   </style>
+</head>
+
+<body class="w3-black">
+   <!--SideBar-->
+   <nav class="w3-sidebar w3-bar-block w3-center w3-hide-small">
+      <!-- HOME -->
+      <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+         <i class="fa fa-home w3-xxlarge"></i>
+         <p>HOME</p>
+      </a>
+      <!-- Sobre -->
+      <a href="#sobre" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+         <i class="fa fa-user w3-xxlarge"></i>
+         <p>SOBRE</p>
+      </a>
+      <!-- Grade Curricular -->
+      <a href="#gradeC" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+         <i class="fa fa-columns w3-xxlarge"></i>
+         <p>Grade Curricular</p>
+      </a>
+      <!-- Docentes -->
+      <a href="#container-docentes"
+         class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+         <i class="fa fa fa-address-card w3-xxlarge"></i>
+         <p>DOCENTES</p>
+      </a>
+      <!-- Mercado de Trabalho -->
+      <a href="#mercado" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+         <i class="fa fa-handshake-o w3-xxlarge"></i>
+         <p>Mercado de Trabalho</p>
+      </a>
+      <!-- Tecnologias -->
+      <a href="#tecnologias"
+         class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+         <i class="fa fa-connectdevelop w3-xxlarge "></i>
+         <p>Tecnologias</p>
+      </a>
+      <!-- Contato -->
+      <a href="#contato" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+         <i class="fa fa-envelope w3-xxlarge"></i>
+         <p>CONTATO</p>
+      </a>
+   </nav>
+   <!--SideBar-->
+   <!--NavBar-->
+   <div class="w3-top w3-hide-large w3-hide-medium">
+      <nav class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+         <a href="#home" class="w3-bar-item w3-button" style="width:25% ">HOME</a>
+         <a href="#sobre" class="w3-bar-item w3-button" style="width:25% ">SOBRE</a>
+         <a href="#tecnologias" class="w3-bar-item w3-button" style="width:27% ">TECNOLOGIAS</a>
+         <a href="#contato" class="w3-bar-item w3-button" style="width:23% ">CONTATO</a>
       </nav>
-      <!--SideBar-->
-      <!--NavBar-->
-      <div class="w3-top w3-hide-large w3-hide-medium" >
-         <nav class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-            <a href="#home" class="w3-bar-item w3-button" style="width:25% ">HOME</a>
-            <a href="#sobre" class="w3-bar-item w3-button" style="width:25% ">SOBRE</a>
-            <a href="#tecnologias" class="w3-bar-item w3-button" style="width:27% ">TECNOLOGIAS</a>
-            <a href="#contato" class="w3-bar-item w3-button" style="width:23% ">CONTATO</a>
-         </nav>
+   </div>
+   <!--NavBar-->
+   <!--Conteúdo da Página -->
+   <div class="w3-padding-large" id="main">
+      <!--Home -->
+      <header class="w3-container w3-padding-32 w3-center " id="home">
+         <h1>
+            <img src="images/logoCab.png" alt="Logo CPS GEEAD SP" class="w3-image" width="50%">
+         </h1>
+         <br>
+         <h1>
+            <img src="images/logoDS.png" alt="Desenvolvimento de Sistemas" class="w3-image" width="90%">
+         </h1>
+      </header>
+      <!--Home -->
+      <!-- Sobre -->
+      <div class="w3-content  w3-padding-64" id="sobre">
+         <h2 class="w3-text-cyan">Sobre o Curso</h2>
+         <hr style="width:200px" class="w3-opacity">
+         <ul class="w3-ul w3-hoverable w3-center w3-white">
+            <li class="w3-cyan w3-xlarge w3-padding-32">O curso tem como objetivo capacitar o aluno para:</li>
+            <li class="w3-padding-16">Desenvolver e operar sistemas, aplicações e interfaces gráficas</li>
+            <li class="w3-padding-16">Montar e realizar manutenção em estruturas de banco de dados</li>
+            <li class="w3-padding-16">Codificar programas e Projetar, implantar e customizar sistemas de aplicações</li>
+            <li class="w3-padding-16">Selecionar programas de aplicação e sistemas operacionais a partir da avaliação
+               das necessidades do usuário;</li>
+            <li class="w3-padding-16">Agir de forma a minimizar os riscos inerentes à segurança de informações,
+               relacionando e aplicando soluções
+               adequadas
+            </li>
+            <li class="w3-padding-16">Identificar oportunidades e tendências no mundo digital</li>
+         </ul>
+         <div class="w3-row w3-padding-16 w3-section w3-light-grey w3-center">
+            <div class="w3-third w3-section">
+               <span class="w3-xlarge">1200+ horas</span>
+               <br> Aula
+            </div>
+            <div class="w3-third w3-section">
+               <span class="w3-xlarge">1000+ horas</span>
+               <br> Aulas Práticas
+            </div>
+            <div class="w3-third w3-section">
+               <span class="w3-xlarge">Certificado</span>
+               <br> Reconhecido pelo MEC
+            </div>
+         </div>
       </div>
-      <!--NavBar-->
-      <!--Conteúdo da Página -->
-      <div class="w3-padding-large" id="main">
-         <!--Home -->
-         <header class="w3-container w3-padding-32 w3-center " id="home">
-            <h1>
-               <img src="images/logoCab.png" alt="Logo CPS GEEAD SP" class="w3-image" width="50%">
-            </h1>
-            <br>
-            <h1>
-               <img src="images/logoDS.png" alt="Desenvolvimento de Sistemas" class="w3-image" width="90%">
-            </h1>
-         </header>
-         <!--Home -->
-         <!-- Sobre -->
-         <div class="w3-content  w3-padding-64" id="sobre">
-            <h2 class="w3-text-cyan">Sobre o Curso</h2>
-            <hr style="width:200px" class="w3-opacity">
-            <ul class="w3-ul w3-hoverable w3-center w3-white">
-               <li class="w3-cyan w3-xlarge w3-padding-32">O curso tem como objetivo capacitar o aluno para:</li>
-               <li class="w3-padding-16">Desenvolver e operar sistemas, aplicações e interfaces gráficas</li>
-               <li class="w3-padding-16">Montar e realizar manutenção em estruturas de banco de dados</li>
-               <li class="w3-padding-16">Codificar programas e Projetar, implantar e customizar sistemas de aplicações</li>
-               <li class="w3-padding-16">Selecionar programas de aplicação e sistemas operacionais a partir da avaliação das necessidades do usuário;</li>
-               <li class="w3-padding-16">Agir de forma a minimizar os riscos inerentes à segurança de informações, relacionando e aplicando soluções
-                  adequadas
-               </li>
-               <li class="w3-padding-16">Identificar oportunidades e tendências no mundo digital</li>
-            </ul>
-            <div class="w3-row w3-padding-16 w3-section w3-light-grey w3-center">
-               <div class="w3-third w3-section">
-                  <span class="w3-xlarge">1200+ horas</span>
-                  <br> Aula
-               </div>
-               <div class="w3-third w3-section">
-                  <span class="w3-xlarge">1000+ horas</span>
-                  <br> Aulas Práticas
-               </div>
-               <div class="w3-third w3-section">
-                  <span class="w3-xlarge">Certificado</span>
-                  <br> Reconhecido pelo MEC
-               </div>
+      <!-- Sobre -->
+      <!-- Grade Curricular -->
+      <div class=" w3-content w3-padding-64" id="gradeC">
+         <h2 class="w3-text-cyan">Grade Curricular</h2>
+         <hr style="width:200px" class="w3-opacity">
+         <div class="w3-row w3-row-padding">
+            <div class="w3-third w3-margin-bottom">
+               <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                  <li class="w3-cyan w3-xlarge w3-padding-32">1º Módulo</li>
+                  <li class="w3-padding-16">Linguagem, Trabalho e Tecnologia</li>
+                  <li class="w3-padding-16">Programação e Algoritmos</li>
+                  <li class="w3-padding-16">Banco de Dados I</li>
+                  <li class="w3-padding-16">Análise e Projeto de Sistemas</li>
+                  <li class="w3-padding-16">Design Digital</li>
+                  <li class="w3-padding-16">Programação Web I</li>
+                  <li class="w3-padding-16">Fundamentos da Informática</li>
+                  <li class="w3-padding-16">Técnicas de Programação</li>
+                  <li class="w3-padding-16">
+                     <span class="w3-xlarge">Total</span>
+                     <br>400/h semestre
+                  </li>
+               </ul>
+            </div>
+            <div class="w3-third">
+               <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                  <li class="w3-cyan w3-xlarge w3-padding-32">2º Módulo</li>
+                  <li class="w3-padding-16">Inglês Instrumental</li>
+                  <li class="w3-padding-16">Desenvolvimento de Sistemas</li>
+                  <li class="w3-padding-16">Banco de Dados II</li>
+                  <li class="w3-padding-16">Internet e Protocolos</li>
+                  <li class="w3-padding-16">Programação de Aplicativos Mobile I</li>
+                  <li class="w3-padding-16">Programação Web II</li>
+                  <li class="w3-padding-16">Planejamento do Trabalho de Conclusão de Curso (TCC)
+                     <br>em Desenvolvimento de Sistemas
+                     <br>
+                  </li>
+                  <li class="w3-padding-16">
+                     <span class="w3-xlarge">Total</span>
+                     <br>400/h semestre
+                  </li>
+               </ul>
+            </div>
+            <div class="w3-third">
+               <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                  <li class="w3-cyan w3-xlarge w3-padding-32">3º Módulo</li>
+                  <li class="w3-padding-16">Segurança de Sistemas de Informação</li>
+                  <li class="w3-padding-16">Banco de Dados III</li>
+                  <li class="w3-padding-16">Sistemas Embarcados</li>
+                  <li class="w3-padding-16">Programação de Aplicativos Mobile II</li>
+                  <li class="w3-padding-16">Programação Web III</li>
+                  <li class="w3-padding-16">Qualidade e Teste de Software</li>
+                  <li class="w3-padding-16">Ética e Cidadania Organizacional</li>
+                  <li class="w3-padding-16">Desenvolvimento do Trabalho de Conclusão de Curso (TCC)</li>
+                  <li class="w3-padding-16">
+                     <span class="w3-xlarge">Total</span>
+                     <br>400/h semestre
+                  </li>
+               </ul>
             </div>
          </div>
-         <!-- Sobre -->
-         <!-- Grade Curricular -->
-         <div class=" w3-content w3-padding-64" id="gradeC">
-            <h2 class="w3-text-cyan">Grade Curricular</h2>
+      </div>
+      <!-- Grade Curricular -->
+      <!-- Docentes -->
+      <div class="w3-content w3-padding-64" id="container-docentes">
+         <section>
+            <h2 class="w3-text-cyan">Docentes</h2>
             <hr style="width:200px" class="w3-opacity">
-            <div class="w3-row w3-row-padding">
-               <div class="w3-third w3-margin-bottom">
-                  <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                     <li class="w3-cyan w3-xlarge w3-padding-32">1º Módulo</li>
-                     <li class="w3-padding-16">Linguagem, Trabalho e Tecnologia</li>
-                     <li class="w3-padding-16">Programação e Algoritmos</li>
-                     <li class="w3-padding-16">Banco de Dados I</li>
-                     <li class="w3-padding-16">Análise e Projeto de Sistemas</li>
-                     <li class="w3-padding-16">Design Digital</li>
-                     <li class="w3-padding-16">Programação Web I</li>
-                     <li class="w3-padding-16">Fundamentos da Informática</li>
-                     <li class="w3-padding-16">Técnicas de Programação</li>
-                     <li class="w3-padding-16">
-                        <span class="w3-xlarge">Total</span>
-                        <br>400/h semestre
-                     </li>
-                  </ul>
+            <div id="container-profissionals-teachers">
+               <div>
+                  <button id="button-back" class="w3-button w3-cyan w3-round">
+                     &lt;
+                  </button>
                </div>
-               <div class="w3-third">
-                  <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                     <li class="w3-cyan w3-xlarge w3-padding-32">2º Módulo</li>
-                     <li class="w3-padding-16">Inglês Instrumental</li>
-                     <li class="w3-padding-16">Desenvolvimento de Sistemas</li>
-                     <li class="w3-padding-16">Banco de Dados II</li>
-                     <li class="w3-padding-16">Internet e Protocolos</li>
-                     <li class="w3-padding-16">Programação de Aplicativos Mobile I</li>
-                     <li class="w3-padding-16">Programação Web II</li>
-                     <li class="w3-padding-16">Planejamento do Trabalho de Conclusão de Curso (TCC)
-                        <br>em Desenvolvimento de Sistemas
-                        <br>
-                     </li>
-                     <li class="w3-padding-16">
-                        <span class="w3-xlarge">Total</span>
-                        <br>400/h semestre
-                     </li>
-                  </ul>
-               </div>
-               <div class="w3-third">
-                  <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                     <li class="w3-cyan w3-xlarge w3-padding-32">3º Módulo</li>
-                     <li class="w3-padding-16">Segurança de Sistemas de Informação</li>
-                     <li class="w3-padding-16">Banco de Dados III</li>
-                     <li class="w3-padding-16">Sistemas Embarcados</li>
-                     <li class="w3-padding-16">Programação de Aplicativos Mobile II</li>
-                     <li class="w3-padding-16">Programação Web III</li>
-                     <li class="w3-padding-16">Qualidade e Teste de Software</li>
-                     <li class="w3-padding-16">Ética e Cidadania Organizacional</li>
-                     <li class="w3-padding-16">Desenvolvimento do Trabalho de Conclusão de Curso (TCC)</li>
-                     <li class="w3-padding-16">
-                        <span class="w3-xlarge">Total</span>
-                        <br>400/h semestre
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <!-- Grade Curricular -->
-         <!-- Docentes -->
-         <div class="w3-content w3-padding-64" id="docentes">
-            <section>
-               <h2 class="w3-text-cyan">Docentes</h2>
-                <hr style="width:200px" class="w3-opacity">
                <div class="w3-row w3-margin-bottom">
                   <div class="w3-col m4 w3-center">
-                     <img src="./images/gabriel-gameleira.jpeg" class="w3-image w3-round-large" alt="Gabriel Gameleira" style="max-width:90%; height:auto;">
+                     <img id="teacher-image" class="w3-image w3-round-large" style="max-width:90%; height:auto;">
                   </div>
                   <div class="w3-col m8">
                      <div class="docente">
-                        <h3 class="w3-text-cyan">Gabriel Gameleira Dos Santos</h3>
+                        <h3 id="teacher-name" class="w3-text-cyan">
+                        </h3>
                         <div>
                            <h4 class="w3-text-cyan"><strong>Formação Acadêmica:</strong></h4>
-                           <p>Graduado em Análise e Desenvolvimento de Sistemas pela Bandtec</p>
-                           <p>Cursando Análise e Desenvolvimento de Sistemas pela ETEC Jorge Street</p>
+                           <div id="teacher-graduate"></div>
                         </div>
                         <div>
                            <h4 class="w3-text-cyan"><strong>Área de atuação:</strong></h4>
-                           <p>Atua como Desenvolvedor de Software Pleno na Minsait com foco em aplicações Angular para o Santander Brasil</p>
+                           <div id="teacher-area"></div>
                         </div>
                      </div>
                   </div>
                </div>
                <div class="w3-row w3-margin-bottom">
-                  <div class="w3-col m4 w3-center">
-                     <img src="./images/cibele-mendes.png" class="w3-image w3-round-large" alt="Cibele Gameleira" style="max-width:90%; height:auto;">
-                  </div>
-                  <div class="w3-col m8">
-                     <div class="docente">
-                        <h3 class="w3-text-cyan">Cibele Gameleira dos Santos</h3>
-                        <div>
-                           <h4 class="w3-text-cyan"><strong>Formação Acadêmica:</strong></h4>
-                           <p>Estudante de Segurança da Informação</p>
-                        </div>
-                        <div>
-                           <h4 class="w3-text-cyan"><strong>Área de atuação:</strong></h4>
-                           <p>Interesse em Linux, Python e desenvolvimento de projetos em programação, como o Jogo da Forca em Python</p>
-                        </div>
-                     </div>
+                  <div>
+                     <button id="button-next" class="w3-button w3-cyan w3-round">
+                        &gt;
+                     </button>
                   </div>
                </div>
-            </section>
+         </section>
+      </div>
+      <!-- Mercado de Trabalho -->
+      <div class="w3-padding-64 w3-content w3-" id="mercado">
+         <h2 class="w3-text-cyan">Mercado de Trabalho</h2>
+         <hr style="width:200px" class="w3-opacity">
+         <p>Segundo o que informa a Associação Brasileira das Empresas de Software (ABES) em parceria com International
+            Data
+            Corporation Pesquisa de Mercado e Consultoria Ltda (IDC), em 2016 haverá um crescimento em 3% no mercado
+            de Tecnologia da Informação no Brasil.
+         </p>
+         <p>Outras Associações e Instituições também discursam sobre o constante crescimento da área da Tecnologia da
+            Informação
+            (T.I.), como, por exemplo, a Associação Brasileira das Empresas de Tecnologia da Informação e Comunicação
+            (BRASSCOM), que em uma entrevista realizada pelo Jornal da Globo, foi divulgado pelo presidente da empresa,
+            Sérgio Sgobbi, que em 2015 a área da Tecnologia da Informação (T.I.) registrou uma alta de mais de 8% em
+            oportunidades de emprego e a tendência para os demais anos é crescer gradativamente.
+         </p>
+         <p>Além disso, em apresentação ocorrida durante o seminário "Governo e o setor de TI - Garantia de Inovação,
+            Produtividade
+            e Segurança”, em Brasília, a expectativa era de que no segundo semestre de 2015, o setor de TI tivesse um
+            crescimento nos investimentos da ordem de 7% a 7,5%, incluindo hardware, software e serviços.
+         </p>
+         <p>Essas informações são baseadas em pesquisa feita pelo International Data Corporation (IDC) no mercado de TI
+            do
+            Brasil. Esta mesma pesquisa aponta que a Indústria Brasileira de TI permanece em 7º lugar no ranking mundial
+            e em 1° lugar no Ranking da América Latina em 2015, com um investimento de US$ 2,2 trilhões (crescimento
+            em 9,2% em relação a 2014), sendo que US$ 14,3 bilhões (crescimento de 8,2%) somente no setor Serviços de
+            T.I. e US$ 12,3 bilhões (crescimento em 30,2%) no setor de softwares.
+         </p>
+         <p>A pesquisa apresentada também trouxe um mapa do investimento em TI no país, no qual a região Sudeste foi a
+            que
+            mais teve participação total nos investimentos em hardware, software e serviços, com 60,67%.
+         </p>
+         <p>
+         <h6 class="w3-text-cyan">Fontes de Consulta:</h6>
+         Associação Brasileira das Empresas de Software. Disponível em
+         <a href="http://www.abessoftware.com.br/">Abessoftware</a>. Acesso em 15 Ago. 2017.
+         <br> International Data Corporation. Disponível em
+         <a href=" http://br.idclatin.com/">Idclatin</a>. Acesso em 15 Ago. 2017.
+         <br> CENTRO PAULA SOUZA. Missão, Visão, Objetivos e Diretrizes.
+         </p>
+      </div>
+      <!-- Mercado de Trabalho -->
+      <!-- Tecnologias -->
+      <div class="w3-padding-64 w3-content" id="tecnologias">
+         <h2 class="w3-text-cyan">Tecnologias</h2>
+         <hr style="width:200px" class="w3-opacity">
+         <div class="w3-row w3-row-padding">
+            <div class="w3-half">
+               <img src="images/html5.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+               <img src="images/CSS3.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+               <img src="images/php.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+            </div>
+            <div class="w3-half">
+               <img src="images/csharp.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+               <img src="images/sql.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+               <img src="images/java.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+            </div>
          </div>
-         <!-- Mercado de Trabalho -->
-         <div class="w3-padding-64 w3-content w3-" id="mercado">
-            <h2 class="w3-text-cyan">Mercado de Trabalho</h2>
-            <hr style="width:200px" class="w3-opacity">
-            <p>Segundo o que informa a Associação Brasileira das Empresas de Software (ABES) em parceria com International Data
-               Corporation Pesquisa de Mercado e Consultoria Ltda (IDC), em 2016 haverá um crescimento em 3% no mercado
-               de Tecnologia da Informação no Brasil.
-            </p>
-            <p>Outras Associações e Instituições também discursam sobre o constante crescimento da área da Tecnologia da Informação
-               (T.I.), como, por exemplo, a Associação Brasileira das Empresas de Tecnologia da Informação e Comunicação
-               (BRASSCOM), que em uma entrevista realizada pelo Jornal da Globo, foi divulgado pelo presidente da empresa,
-               Sérgio Sgobbi, que em 2015 a área da Tecnologia da Informação (T.I.) registrou uma alta de mais de 8% em
-               oportunidades de emprego e a tendência para os demais anos é crescer gradativamente.
-            </p>
-            <p>Além disso, em apresentação ocorrida durante o seminário "Governo e o setor de TI - Garantia de Inovação, Produtividade
-               e Segurança”, em Brasília, a expectativa era de que no segundo semestre de 2015, o setor de TI tivesse um
-               crescimento nos investimentos da ordem de 7% a 7,5%, incluindo hardware, software e serviços.
-            </p>
-            <p>Essas informações são baseadas em pesquisa feita pelo International Data Corporation (IDC) no mercado de TI do
-               Brasil. Esta mesma pesquisa aponta que a Indústria Brasileira de TI permanece em 7º lugar no ranking mundial
-               e em 1° lugar no Ranking da América Latina em 2015, com um investimento de US$ 2,2 trilhões (crescimento
-               em 9,2% em relação a 2014), sendo que US$ 14,3 bilhões (crescimento de 8,2%) somente no setor Serviços de
-               T.I. e US$ 12,3 bilhões (crescimento em 30,2%) no setor de softwares.
-            </p>
-            <p>A pesquisa apresentada também trouxe um mapa do investimento em TI no país, no qual a região Sudeste foi a que
-               mais teve participação total nos investimentos em hardware, software e serviços, com 60,67%.
+      </div>
+      <!-- Tecnologias -->
+      <!-- Contato -->
+      <div class="w3-padding-128 w3-content w3-text-grey" id="contato">
+         <h2 class="w3-text-cyan">Contato</h2>
+         <hr style="width:200px" class="w3-opacity">
+         <div class="w3-section">
+            <p>
+               <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> São Paulo, Brasil
             </p>
             <p>
-            <h6 class="w3-text-cyan">Fontes de Consulta:</h6>
-            Associação Brasileira das Empresas de Software. Disponível em
-            <a href="http://www.abessoftware.com.br/">Abessoftware</a>. Acesso em 15 Ago. 2017.
-            <br> International Data Corporation. Disponível em
-            <a href=" http://br.idclatin.com/">Idclatin</a>. Acesso em 15 Ago. 2017.
-            <br> CENTRO PAULA SOUZA. Missão, Visão, Objetivos e Diretrizes.
+               <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Telefone: 11 3333-3333
+            </p>
+            <p>
+               <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: ds@cps.sp.gov.br
             </p>
          </div>
-         <!-- Mercado de Trabalho -->
-         <!-- Tecnologias -->
-         <div class="w3-padding-64 w3-content" id="tecnologias">
-            <h2 class="w3-text-cyan">Tecnologias</h2>
-            <hr style="width:200px" class="w3-opacity">
-            <div class="w3-row w3-row-padding">
-               <div class="w3-half">
-                  <img src="images/html5.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
-                  <img src="images/CSS3.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
-                  <img src="images/php.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
-               </div>
-               <div class="w3-half">
-                  <img src="images/csharp.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
-                  <img src="images/sql.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
-                  <img src="images/java.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
-               </div>
-            </div>
-         </div>
-         <!-- Tecnologias -->
-         <!-- Contato -->
-         <div class="w3-padding-128 w3-content w3-text-grey" id="contato">
-            <h2 class="w3-text-cyan">Contato</h2>
-            <hr style="width:200px" class="w3-opacity">
-            <div class="w3-section">
-               <p>
-                  <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> São Paulo, Brasil
-               </p>
-               <p>
-                  <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Telefone: 11 3333-3333
-               </p>
-               <p>
-                  <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: ds@cps.sp.gov.br
-               </p>
-            </div>
+         <br>
+         <p>Entre em contato:</p>
+         <form>
+            <p>
+               <input class="w3-input w3-padding-16" type="text" placeholder="Nome" required name="Nome">
+            </p>
+            <p>
+               <input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email">
+            </p>
+            <p>
+               <input class="w3-input w3-padding-16" type="text" placeholder="Assunto" required name="Assunto">
+            </p>
+            <p>
+               <input class="w3-input w3-padding-16" placeholder="Menssagem" required name="Mensagem">
+            </p>
             <br>
-            <p>Entre em contato:</p>
-            <form>
-               <p>
-                  <input class="w3-input w3-padding-16" type="text" placeholder="Nome" required name="Nome">
-               </p>
-               <p>
-                  <input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email">
-               </p>
-               <p>
-                  <input class="w3-input w3-padding-16" type="text" placeholder="Assunto" required name="Assunto">
-               </p>
-               <p>
-                  <input class="w3-input w3-padding-16" placeholder="Menssagem" required name="Mensagem">
-               </p>
-               <br>
-               <br>
-               <p>
-                  <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+            <br>
+            <p>
+               <button class="w3-button w3-light-grey w3-padding-large" type="submit">
                   <i class="fa fa-paper-plane"></i> Enviar mensagem
-                  </button>
-               </p>
-            </form>
-            <br>
-         </div>
-         <!-- Contato -->
+               </button>
+            </p>
+         </form>
+         <br>
       </div>
-   </body>
+      <!-- Contato -->
+   </div>
+</body>
+
 </html>

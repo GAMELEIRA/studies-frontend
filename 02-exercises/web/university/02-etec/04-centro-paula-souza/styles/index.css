@@ -1,0 +1,6 @@
+#container-profissionals-teachers {
+  display: grid;
+  grid-template-columns: 5% 90% 5%; 
+  align-items: center;
+  gap: 10px;
+}
